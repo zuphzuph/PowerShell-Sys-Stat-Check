@@ -1,4 +1,4 @@
-#Get users that exist on System
+#Get local user accounts that exist on System
 net user
 #Get IPv4 Address
 Test-Connection -ComputerName $env:computername -count 1
