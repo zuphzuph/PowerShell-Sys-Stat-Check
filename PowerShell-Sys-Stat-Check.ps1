@@ -4,7 +4,7 @@ net user
 Test-Connection -ComputerName $env:computername -count 1
 write-host ""
 #Check Event Logs
-#Get-EventLog -AsString <-- List log types within Event Viewer on Systen
+#Get-EventLog -AsString <-- List log types within Event Viewer on System
 Get-WinEvent -FilterHashtable @{Logname='Security'}  -MaxEvents 1
 #Get Windows Version
 write-host ""
