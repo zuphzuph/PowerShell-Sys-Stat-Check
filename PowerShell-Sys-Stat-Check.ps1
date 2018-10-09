@@ -16,7 +16,6 @@ Get-HotFix -Description Security*
 if((get-process "chrome" -ea SilentlyContinue) -eq $Null){ 
     echo "Chrome isn't running." 
 }
-
 else{ 
     echo "Chrome is running."
 }
